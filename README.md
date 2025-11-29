@@ -1,6 +1,8 @@
 Guard Band Chart (GBC) Excel & Python Tool
 1. Overview
 
+The Guard Band Chart (GBC) is an enhanced quality-control tool that identifies key factors affecting measurement results, estimates their uncertainties through a mathematical model, and visualizes uncertainty-adjusted decision boundaries. By integrating measurement uncertainty into a control-chart-like structure, the GBC enables more reliable quality decisions and helps reveal dominant contributors for continuous improvement.
+
 This repository provides an Excel-based and Python-based tool for generating the Guard Band Chart (GBC) used in precision measurement and quality control.
 
 The GBC visualizes:
