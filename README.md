@@ -19,7 +19,7 @@ The tool is designed for general users, students, engineers, and researchers who
 
 2. Files Included
 /Excel_Tool/
-   └─ GBC_Flatness_with_Charts.xlsx      → Excel file with auto-generated 1w/2w/3w GBC charts
+   └─ GBC_Flatness_with_Charts.xlsx      → Excel file with auto-generated GBC chart
 
 /Python_Code/
    ├─ gbc_flatness_visualization.py      → Python script that generates GBC charts
