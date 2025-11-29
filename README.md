@@ -5,15 +5,17 @@ This repository provides an Excel-based and Python-based tool for generating the
 
 The GBC visualizes:
 
-1w, 2w, and 3w guard band boundaries
+- 1w, 2w, and 3w guard band boundaries
 
-Fully conforming / conditional / nonconforming zones
+- Fully conforming / conditional / nonconforming zones
 
-Measurement trends for Part A, Part B, Part C
+- Measurement trends for Part A, Part B, Part C
 
-Decision limits (TL, AL) based on measurement uncertainty
+- Decision limits (TL, AL) based on measurement uncertainty
 
 The tool is designed for general users, students, engineers, and researchers who want a simple and visual way to understand guard-band decision rules.
+
+
 
 2. Files Included
 /Excel_Tool/
@@ -28,55 +30,61 @@ The tool is designed for general users, students, engineers, and researchers who
    ├─ gbc_2w.png
    └─ gbc_3w.png
 
+   
+
 3. How to Use the Excel Tool
 Excel Version (Easiest for General Users)
 
-Download GBC_Flatness_with_Charts.xlsx from the repository.
+1) Download GBC_Flatness_with_Charts.xlsx from the repository.
 
-Open the file in Excel.
+2) Open the file in Excel.
 
-In the parameter table (right side of the sheet), you may adjust:
+3) In the parameter table (right side of the sheet), you may adjust:
 
-TL (Tolerance Limit)
+- TL (Tolerance Limit)
 
-uc (Standard uncertainty)
+- uc (Standard uncertainty)
 
-k (Coverage factor)
+- k (Coverage factor)
 
-The following are automatically calculated:
+4) The following are automatically calculated:
 
-Guard band width w
+- Guard band width w
 
-Acceptance limits AL (1w, 2w, 3w)
+- Acceptance limits AL (1w, 2w, 3w)
 
-The Excel file automatically updates three GBC charts:
+5) The Excel file automatically updates three GBC charts:
 
-GBC (1w)
+- GBC (1w)
 
-GBC (2w)
+- GBC (2w)
 
-GBC (3w)
+- GBC (3w)
 
 ✔ No programming required
 ✔ Fully automated visualization
 ✔ Useful for training and industrial application
 
+
+
 4. How to Use the Python Tool
 Python Version (For flexible visualization or code modification)
 
-Install Python 3.x
+1) Install Python 3.x
 
-Install required packages:
+2) Install required packages:
 
 pip install -r requirements.txt
 
 
-Run the visualization script:
+3) Run the visualization script:
 
 python gbc_flatness_visualization.py
 
 
-This will generate three charts (1w/2w/3w) identical to the Excel version.
+4) This will generate three charts (1w/2w/3w) identical to the Excel version.
+
+   
 
 5. Example Visualizations (Screenshots)
 1w Guard Band Chart
@@ -87,36 +95,42 @@ This will generate three charts (1w/2w/3w) identical to the Excel version.
 
 These images provide a clear view of how the GBC tool displays the tolerance limit (TL), acceptance limits (AL), and measurement data.
 
+
+
 6. Key Concepts (Simple Explanation)
 
 Below are essential concepts explained for general users:
 
-TL (Tolerance Limit)
+1) TL (Tolerance Limit)
 The specification limit set by design or engineering standards.
 
-Uncertainty (uc)
+2) Uncertainty (uc)
 A quantified estimate showing how much the measurement could vary.
 
-Guard Band Width (w = k·uc)
+3) Guard Band Width (w = k·uc)
 A safety margin applied to reduce false acceptance or false rejection.
 
-AL (Acceptance Limit)
+4) AL (Acceptance Limit)
 The practical decision boundary used for quality inspection.
 
-Zones in GBC
+5) Zones in GBC
 
-Fully Conforming Zone: Safe region
+- Fully Conforming Zone: Safe region
 
-Conditional Zone: Near borderline
+- Conditional Zone: Near borderline
 
-Nonconforming Zone: Fails the specification
+- Nonconforming Zone: Fails the specification
+
+  
 
 7. Citation
 
 If you use this tool in academic work, please cite:
 
-Choi, S. (2025).
+Choi, S. (2025). Hanyand University
 “Design and Implementation of a Quality-Improvement-Oriented Guard Band Chart Based on Measurement Uncertainty.”
+
+
 
 8. License
 
