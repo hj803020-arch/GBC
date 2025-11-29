@@ -35,11 +35,11 @@ The tool is designed for general users, students, engineers, and researchers who
 3. How to Use the Excel Tool
 Excel Version (Easiest for General Users)
 
-1) Download GBC_Flatness_with_Charts.xlsx from the repository.
+(1) Download GBC_Flatness_with_Charts.xlsx from the repository.
 
-2) Open the file in Excel.
+(2) Open the file in Excel.
 
-3) In the parameter table (right side of the sheet), you may adjust:
+(3) In the parameter table (right side of the sheet), you may adjust:
 
 - TL (Tolerance Limit)
 
@@ -47,13 +47,13 @@ Excel Version (Easiest for General Users)
 
 - k (Coverage factor)
 
-4) The following are automatically calculated:
+(4) The following are automatically calculated:
 
 - Guard band width w
 
 - Acceptance limits AL (1w, 2w, 3w)
 
-5) The Excel file automatically updates three GBC charts:
+(5) The Excel file automatically updates three GBC charts:
 
 - GBC (1w)
 
@@ -70,19 +70,19 @@ Excel Version (Easiest for General Users)
 4. How to Use the Python Tool
 Python Version (For flexible visualization or code modification)
 
-1) Install Python 3.x
+(1) Install Python 3.x
 
-2) Install required packages:
+(2) Install required packages:
 
 pip install -r requirements.txt
 
 
-3) Run the visualization script:
+(3) Run the visualization script:
 
 python gbc_flatness_visualization.py
 
 
-4) This will generate three charts (1w/2w/3w) identical to the Excel version.
+(4) This will generate three charts (1w/2w/3w) identical to the Excel version.
 
    
 
@@ -101,19 +101,19 @@ These images provide a clear view of how the GBC tool displays the tolerance lim
 
 Below are essential concepts explained for general users:
 
-1) TL (Tolerance Limit)
+(1) TL (Tolerance Limit)
 The specification limit set by design or engineering standards.
 
-2) Uncertainty (uc)
+(2) Uncertainty (uc)
 A quantified estimate showing how much the measurement could vary.
 
-3) Guard Band Width (w = k·uc)
+(3) Guard Band Width (w = k·uc)
 A safety margin applied to reduce false acceptance or false rejection.
 
-4) AL (Acceptance Limit)
+(4) AL (Acceptance Limit)
 The practical decision boundary used for quality inspection.
 
-5) Zones in GBC
+(5) Zones in GBC
 
 - Fully Conforming Zone: Safe region
 
@@ -127,7 +127,7 @@ The practical decision boundary used for quality inspection.
 
 If you use this tool in academic work, please cite:
 
-Choi, S. (2025). Hanyand University
+Choi, S. (2025). Hanyang University
 “Design and Implementation of a Quality-Improvement-Oriented Guard Band Chart Based on Measurement Uncertainty.”
 
 
