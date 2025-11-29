@@ -25,7 +25,7 @@ w = k * uc                 # Guard band width [mm]
 w_list  = [1, 2, 3]        # 1w, 2w, 3w
 titles = ["AL (1w)", "AL (2w)", "AL (3w)"]
 
-# 공통 y축 범위 (예시 그림과 유사하게)
+# 공통 y축 범위
 y_min = 0.0
 y_max = 0.165
 
@@ -36,6 +36,9 @@ for n_w, title in zip(w_list, titles):
     AL = TL - n_w * w
 
     fig, ax = plt.subplots(figsize=(7, 3))
+
+    # ---- Title 추가 (오직 이 부분만 신규 추가됨) ----
+    ax.set_title("GBC", fontsize=12)
 
     # ---- Background zones ----
     ax.fill_between([1, 10], TL, y_max,
@@ -56,14 +59,14 @@ for n_w, title in zip(w_list, titles):
     ax.plot(n, part_B, marker="o", color="green", linewidth=1.2, label="Part B")
     ax.plot(n, part_C, marker="o", color="blue",  linewidth=1.2, label="Part C")
 
-    # ---- Axes & style ----
+    # ---- Axes ----
     ax.set_xlabel("Measurement Number (n)")
     ax.set_ylabel("Measured Flatness (mm)")
     ax.set_xlim(1, 10)
     ax.set_ylim(y_min, y_max)
     ax.grid(alpha=0.3)
 
-    # ---- Legend 정리 (중복 label 정리 & 순서 조정) ----
+    # ---- Legend 정리 ----
     handles, labels = ax.get_legend_handles_labels()
     order = [labels.index("Part A"),
              labels.index("Part B"),
