@@ -127,8 +127,8 @@ The practical decision boundary used for quality inspection.
 
 If you use this tool in academic work, please cite:
 
-Choi, I., and Hur, S. (2025). 
-Design and Implementation of a Quality-Improvement-Oriented Guard Band Chart Based on Measurement Uncertainty.Hanyang University.
+Choi, I., and Hur, S. (2026). 
+Design and Implementation of a Quality-Improvement-Oriented Guard Band Chart Based on Measurement Uncertainty.[Doctoral dissertation, Hanyang University].
 
 
 
